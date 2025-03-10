@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    align-items: center;
+    background: palegoldenrod;
+  }
+  
+  .header__nav-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+  
+  .header__action {
+    display: flex;
+  }
+  

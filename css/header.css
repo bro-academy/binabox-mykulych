@@ -1,16 +1,40 @@
 .header {
-    display: flex;
-    align-items: center;
-    background: palegoldenrod;
-  }
-  
-  .header__nav-list {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-  }
-  
-  .header__action {
-    display: flex;
-  }
-  
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.header__search {
+  position: relative;
+}
+
+.header__search-input {
+  min-height: 48px;
+  background:  transparent;
+  padding-left: 44px;
+
+}
+
+.header__search-input:hover::placeholder {
+  color: #F5F8FB;
+}
+
+.header__action::before {
+  content: "";
+  margin-inline: 16px;
+  border-left: 2px solid red;
+}
+
+.header__action {
+  display: flex;
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+}

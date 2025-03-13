@@ -1,0 +1,14 @@
+.slider__arrows::before {
+content: "";
+margin-inline: 16px;
+border-left: 2px solid red;
+}
+
+.slider__arrows {
+  
+}
+
+.slider__action {
+  display: flex;
+  align-items: center;
+}

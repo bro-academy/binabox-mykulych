@@ -35,6 +35,11 @@
   background-color: #3892F3;
 }
 
+.button--blue:focus {
+background-color: #0265DC;
+}
+
+
 .button--arrow {
   background-color: var(--color-secondary);
   padding: 12px;

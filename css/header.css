@@ -24,15 +24,21 @@
   list-style: none;
 }
 
+.header__nav-list-item {
+  border-bottom: 2px solid transparent;
+  padding: 8px 20px;
+  transition: 0.3s;
+}
+
 .header__nav-list-item:hover {
   border-bottom: 2px solid var(--color-secondary);
+  color: #E7EEF7A8;
 }
 
 .header__action {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
-
   display: flex;
 }
 
@@ -58,8 +64,8 @@
 }
 
 .button-wrapper {
-display: flex;
-gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .header__button {

@@ -19,12 +19,12 @@
 @import "./ui-elements/index.css";
 
 :root {
-  --color-primary: #F5F8FB;
-  --color-secondary: #0265DC;
-  --color-background: #0D0D15;
-  --color-background-secondary: #1D1C28;
-  --color-grey: #EFF5FAD1;
-  --BG-Base: #0D0D15;
+  --color-primary: #f5f8fb;
+  --color-secondary: #0265dc;
+  --color-background: #0d0d15;
+  --color-background-secondary: #1d1c28;
+  --color-grey: #eff5fad1;
+  --BG-Base: #0d0d15;
   --font-family-primary: "Poppins", Arial, sans-serif;
   --font-family-secondary: "Bakbak One", Georgia, serif;
 }
@@ -36,6 +36,7 @@ body {
   max-width: 1920px;
   width: 100%;
   margin: auto;
+  position: relative;
 }
 
 /* img {
@@ -61,4 +62,47 @@ h2 {
 
 h4 {
   line-height: 1.5;
+}
+
+.preloader::after {
+  position: absolute;
+  top: calc(50% - 20px);
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  content: "";
+  display: block;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  border: solid;
+  border-width: 10px;
+  border-radius: 50%;
+  border-top-color: #0054B6;
+  border-right-color: #3892F3;
+  border-bottom-color: #3892F3;
+  border-left-color: #3892F3;
+  animation: rotate 2s linear 0s infinite, fadeOut 4s forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(1);
   }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}

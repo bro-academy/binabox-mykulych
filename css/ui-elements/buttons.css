@@ -1,43 +1,51 @@
 .button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    box-sizing: border-box;
-    min-height: 48px;
-    padding: 0px 24px;
-    background: transparent;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 600;
-    text-decoration: none;
-    color: white;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  gap: 8px;
+  min-height: 48px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border: 2px solid rgba(208, 215, 251, 0.17);
+}
+
+.button:hover {
+  scale: 1.05;
 }
 
 .button--primary {
-    background: var(--color-secondary);
-    border: none;
+  padding: 0 24px;
 }
 
-.button--secondary {
-    background: transparent;
-    border: 2px solid #D0D7FB2B;
+.button--primary:hover {
+  background-color: #BFC5EE1F;
 }
 
-/* Hover for social SVG */
-.social__svg {
-    transition: fill 0.3s ease;
-    fill: #F5F8FB; 
-  }
-  
-  .social__svg:hover {
-    fill: #E5ECFB5C; 
-  }
+.button--blue {
+  background-color: var(--color-secondary);
+  padding: 0 24px;
+  border: none;
+}
 
-  .lupa {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-  }
-  
+.button--blue:hover {
+  background-color: #3892F3;
+}
+
+.button--arrow {
+  background-color: var(--color-secondary);
+  padding: 12px;
+}
+
+.link--bordered {
+  border: 2px solid #d0d7fb2b;
+  padding: 6px 12px;
+  transition: 0.2s;
+}
+
+.link--bordered:hover {
+  border-color: #ffffff;
+}

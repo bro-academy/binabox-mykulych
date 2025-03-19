@@ -61,10 +61,12 @@
 .button-wrapper::before {
   content: "";
   border-left: 2px solid rgba(208, 215, 251, 0.17);
+  height: 24px;
 }
 
 .button-wrapper {
   display: flex;
+  align-items: center;
   gap: 16px;
 }
 

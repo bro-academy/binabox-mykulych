@@ -16,7 +16,7 @@
 }
 
 .page__aside {
-  background-color: var(--color-background-secondary);
+  background-color: var(--color-bg-alternative-2);
   position: absolute;
   min-width: 328px;
   top: 64px;
@@ -46,16 +46,16 @@
 }
 
 .page__text-button {
-  background-color: var(--color-secondary);
+  background-color: var(--color-marina-800);
 }
 
 .page__text-highlight {
-  color: #78bbfa;
+  color: var(--color-accent-link);
   transition: 0.2s;
 }
 
 .page__text-highlight:hover {
-  color: #3892f3;
+  color: var(--color-marina-600);
 }
 
 .page__text-list-item {
@@ -87,12 +87,12 @@
 }
 
 .page__list-item:hover {
-  color: #78bbfa;
+  color: var(--color-marina-600);
   cursor: pointer;
 }
 
 .blockquote-block {
-  background-color: #002754;
+  background-color: var(--color-marina-1200);
   border-radius: 10px;
   padding: 16px;
 }
@@ -126,7 +126,7 @@
 }
 
 .mark--colored {
-  color: #eff5fad1;
+  color: var(--color-secondary);
 }
 
 .page__links-wrapper {

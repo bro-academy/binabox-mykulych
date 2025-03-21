@@ -3,11 +3,16 @@
     --font-family-secondary: "Bakbak One", Georgia, serif;
     
     --color-primary: #F5F8FB;
-    --color-marina-600: #3892F3;
+    --color-secondary: #EFF5FAD1;
+    --color-marina-1200: #002754;
     --color-marina-800: #0265DC;
+    --color-marina-600: #3892F3;
     --color-seporator: #BFC5EE1F;
     --color-seporator-bold: #D0D7FB2B;
-    --color-grey: #eff5fad1;
-    --color-background: #0d0d15;
-    --color-background-secondary: #1d1c28;
+    --color-bg-base: #0D0D15;
+    --color-bg-alternative: #1A1925;
+    --color-bg-alternative-2: #1D1C28;
+    --color-negative: #EA3829;
+    --color-accent-link: #78BBFA;
+
 }

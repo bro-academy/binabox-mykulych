@@ -60,7 +60,7 @@
   min-height: 48px;
   background: transparent;
   padding-left: 44px;
-  border: 2px solid rgba(208, 215, 251, 0.17);
+  border: 2px solid var(--color-seporator-bold);
 }
 
 .header__search-input:hover::placeholder {

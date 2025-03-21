@@ -8,7 +8,7 @@
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0px;
-  color: var(--color-grey);
+  color: var(--color-secondary);
   margin-bottom: 40px;
 }
 
@@ -20,12 +20,39 @@
 }
 
 .about-card__item {
-    background-color: #1A1925;
+    background-color: var(--color-bg-alternative);
     background-repeat: no-repeat;
     background-position: 32px 32px;
     padding: 62px 32px 32px 32px;
     position: relative;
     z-index: 1;
+    border: 2px solid var(--color-bg-alternative);
+    outline: 2px solid transparent;
+    transition: border-color .15s ease-in, outline-color .15s ease-in;
+}
+
+.about-card__item::before {
+  content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../pictures/frame.png') no-repeat top left;
+    background-size: 100% 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.about-card__item:hover::before {
+  opacity: 1;
+}
+
+.about-card__item:active {
+  border-color: var(--color-marina-600);
+  outline-color: var(--color-marina-600);
+}
+
+.about-card__item:active::before {
+  opacity: 0;
 }
 
 .about-card__title {
@@ -53,5 +80,5 @@ font-weight: 400;
 font-size: 18px;
 line-height: 1.5;
 letter-spacing: 0px;
-color: var(--color-grey);
+color: var(--color-secondary);
 }

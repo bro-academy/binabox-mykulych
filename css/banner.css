@@ -26,7 +26,7 @@ h1 {
 }
 
 .banner__title--blue {
-  color: #0265dc;
+  color: var(--color-marina-800);
 }
 
 .banner__text {
@@ -59,7 +59,7 @@ h1 {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0px;
-  color: var(--color-grey);
+  color: var(--color-secondary);
 }
 
 .banner__action-buttons {

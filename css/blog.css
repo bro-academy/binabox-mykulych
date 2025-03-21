@@ -6,7 +6,7 @@
 
 .blog__card {
   position: relative;
-  background-color: var(--color-background-secondary);
+  background-color: var(--color-bg-alternative-2);
   padding: 24px;
 }
 
@@ -19,5 +19,5 @@
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0px;
-  color: var(--color-grey);
+  color: var(--color-secondary);
 }

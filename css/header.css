@@ -20,6 +20,10 @@
   margin: 0;
 }
 
+.header__nav-item-button:hover {
+  color: var(--color-secondary2);
+}
+
 .active {
   border-bottom: 2px solid var(--color-marina-800);
 }
@@ -64,7 +68,7 @@
 }
 
 .header__search-input:hover::placeholder {
-  color: var(--color-primary);
+  color: var(--color-secondary2);
 }
 
 .header__action-buttons {

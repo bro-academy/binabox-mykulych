@@ -70,6 +70,10 @@ transition: 0.2s ease-in-out;
     align-items: center;
   }
 
+  .button--article:hover {
+    background-color: var(--color-seporator);
+  }
+
 .link--bordered {
   border: 2px solid #d0d7fb2b;
   padding: 6px 12px;

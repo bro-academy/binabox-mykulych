@@ -43,8 +43,9 @@
   position: absolute;
   font-size: 70px;
   top: 36px;
-  color: var(--color-marina-800);
   z-index: -1;
+  -webkit-text-stroke: 2px var(--color-marina-800);
+  color: transparent;
 }
 
 .about-card__text {

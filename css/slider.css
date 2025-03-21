@@ -131,3 +131,25 @@
   background-color: var(--color-negative);
   color: var(--color-primary);
 }
+
+.slider__item-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: absolute;
+  width: 85%;
+  top: 50%;
+  transform: translateY(-50%);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.slider__item:hover .slider__item-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .slider__item:hover {
+  opacity: 0.3;
+} */
+

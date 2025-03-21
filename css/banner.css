@@ -1,27 +1,5 @@
 .section--banner {
-  /* display: flex;
-  align-items: center;
-  gap: 50px;
-  background-image: url(../pictures/cube.webp);
-  background-color:rgb(7, 18, 28);
-  background-repeat: no-repeat;
-  background-position: 1030px;
-  margin-bottom: 64px; */
-  /* position: relative; */
   background: radial-gradient(42.5% 42.5% at 22.28% -4.22%, rgba(2, 101, 220, 0.5) 0%, rgba(2, 101, 220, 0) 100%);
-}
-
-.banner__wrapper {
-  /* padding-block: 139px;
-  padding-left: 164px; */
-  /* max-width: 858px; */
-}
-
-.banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .banner {
@@ -84,7 +62,7 @@ h1 {
   color: var(--color-grey);
 }
 
-.banner__action {
+.banner__action-buttons {
   display: flex;
   align-items: center;
   gap: 16px;

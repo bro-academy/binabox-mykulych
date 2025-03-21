@@ -1,8 +1,8 @@
-.slider {
+.section-slider {
   margin-bottom: 64px;
 }
 
-.slider__title {
+.slider__action {
   position: relative;
   display: flex;
   align-items: center;
@@ -10,13 +10,23 @@
   margin-bottom: 64px;
 }
 
-.slider__heading::before {
+.slider__action-heading::before {
   content: url("../pictures/stroke.png");
   margin-right: 8px;
   vertical-align: middle;
 }
 
-.slider__heading {
+.slider__action-heading::after {
+  position: absolute;
+  content: '';
+  border-bottom: 3px solid #D0D7FB2B;
+  width: 1167px;
+  left: 175px;
+  /* transform: translateX(-50%); */
+}
+
+
+.slider__action-heading {
   font-family: var(--font-family-secondary);
   font-weight: 400;
   font-size: 24px;
@@ -25,6 +35,18 @@
   display: flex;
   align-items: center;
 }
+
+.slider__action-buttons {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* .slider__action-buttons::before {
+  content: '';
+  border-bottom: 3px solid #D0D7FB2B;
+  width: 75%;
+} */
 
 .line {
   border-bottom: 3px solid #D0D7FB2B;
@@ -62,10 +84,6 @@
   padding: 24px;
   width: 20%;
   transition: 0.2s ease-in;
-}
-
-.slider__item:hover {
-  scale: 1.03;
 }
 
 .slider__item-img {

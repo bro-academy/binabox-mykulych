@@ -1,0 +1,13 @@
+:root {
+    --font-family-primary: "Poppins", Arial, sans-serif;
+    --font-family-secondary: "Bakbak One", Georgia, serif;
+    
+    --color-primary: #F5F8FB;
+    --color-marina-600: #3892F3;
+    --color-marina-800: #0265DC;
+    --color-seporator: #BFC5EE1F;
+    --color-seporator-bold: #D0D7FB2B;
+    --color-grey: #eff5fad1;
+    --color-background: #0d0d15;
+    --color-background-secondary: #1d1c28;
+}

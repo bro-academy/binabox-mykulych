@@ -1,9 +1,11 @@
 @import "./ui-elements/index.css";
 @import "./normalize.css";
-@import "./reset.css";
 @import "./ui-elements/modificators.css";
-/*========================== HOMEPAGE ==================================*/
-@import "./ui-elements.css";
+/* ui-elements */
+@import "./ui-elements/index.css";
+/* Main styles */
+@import "./main.css";
+/*========================== Homepage page ==================================*/
 @import "./header.css";
 @import "./banner.css";
 @import "./slider.css";
@@ -12,101 +14,6 @@
 @import "./team.css";
 @import "./faq.css";
 @import "./footer.css";
-/*========================== BLOG ==================================*/
+
+/*========================== Blog page ==================================*/
 @import "./page.css";
-
-/* ui-elements */
-@import "./ui-elements/index.css";
-
-:root {
-  --color-primary: #f5f8fb;
-  --color-secondary: #0265dc;
-  --color-background: #0d0d15;
-  --color-background-secondary: #1d1c28;
-  --color-grey: #eff5fad1;
-  --BG-Base: #0d0d15;
-  --font-family-primary: "Poppins", Arial, sans-serif;
-  --font-family-secondary: "Bakbak One", Georgia, serif;
-}
-
-body {
-  background-color: var(--color-background);
-  color: var(--color-primary);
-  position: relative;
-}
-
-main {
-  font-family: var(--font-family-primary);
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
-  
-}
-
-/* img {
-  width: 100%;
-} */
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.section {
-  padding-inline: 64px;
-}
-
-h2 {
-  font-family: var(--font-family-secondary);
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.3;
-  letter-spacing: -0.5px;
-}
-
-h4 {
-  line-height: 1.5;
-}
-
-.preloader::after {
-  position: absolute;
-  top: calc(50% - 20px);
-  bottom: 5%;
-  left: 0;
-  right: 0;
-  content: "";
-  display: block;
-  margin: auto;
-  height: 100px;
-  width: 100px;
-  border: solid;
-  border-width: 10px;
-  border-radius: 50%;
-  border-top-color: #0054B6;
-  border-right-color: #3892F3;
-  border-bottom-color: #3892F3;
-  border-left-color: #3892F3;
-  animation: rotate 2s linear 0s infinite, fadeOut 4s forwards;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    transform: rotate(180deg) scale(1.2);
-  }
-  100% {
-    transform: rotate(360deg) scale(1);
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}

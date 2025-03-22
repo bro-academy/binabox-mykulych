@@ -147,6 +147,7 @@
 .slider__item:hover .slider__item-overlay {
   visibility: visible;
   opacity: 1;
+  transition: opacity .15s ease-in;
 }
 
 /* .slider__item:hover {

@@ -5,6 +5,7 @@
     --color-primary: #F5F8FB;
     --color-secondary: #EFF5FAD1;
     --color-secondary2: #E7EEF7A8;
+    --color-secondary-white: #EFF5FAD1;
     --color-marina-1200: #002754;
     --color-marina-800: #0265DC;
     --color-marina-600: #3892F3;
@@ -13,6 +14,7 @@
     --color-bg-base: #0D0D15;
     --color-bg-alternative: #1A1925;
     --color-bg-alternative-2: #1D1C28;
+    --color-bg-alternative-2-invert: #F4F7FA;
     --color-negative: #EA3829;
     --color-accent-link: #78BBFA;
 

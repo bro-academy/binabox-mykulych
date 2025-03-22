@@ -79,8 +79,35 @@
     line-height: 28px;
     min-height: 52px;
     padding: 12px 55px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
 
+.icon {
+  fill: transparent; /* Центр иконки прозрачный */
+  stroke: black; /* Контур черный */
+  transition: fill 0.3s ease, stroke 0.3s ease; /* Плавный переход */
+}
 
+.favorites--button:hover .icon {
+  fill: red; /* При наведении центр иконки становится красным */
+  stroke: red; /* Контур тоже становится красным */
+}
+
+.favorites--button:hover {
+  background-color: var(--color-secondary-white);
+}
+
+.buy-button {
+ background-color: var(--color-marina-800);
+ color: var(--color-primary);
+}
+
+.buy-button:hover {
+  background-color: var(--color-marina-600);
 }
 
 .link--bordered {

@@ -11,10 +11,7 @@
     background: transparent;
     cursor: pointer;
     border: 2px solid transparent;
-}
-
-.button:hover {
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 /* ------------------------Button Primary */
@@ -84,6 +81,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+    transition: 0.3s ease-in-out;
 }
 
 .icon {

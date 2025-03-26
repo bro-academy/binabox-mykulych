@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-h1 {
+.banner__title {
   font-family: var(--font-family-secondary);
   font-weight: 400;
   font-size: 52px;

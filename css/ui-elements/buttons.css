@@ -12,6 +12,7 @@
     cursor: pointer;
     border: 2px solid transparent;
     transition: 0.3s ease-in-out;
+    outline-offset: 0px;
 }
 
 /* ------------------------Button Primary */

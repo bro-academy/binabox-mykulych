@@ -1,8 +1,8 @@
-.slider {
+.catalog {
   margin-bottom: 64px;
 }
 
-.slider__action {
+.catalog__action {
   position: relative;
   display: flex;
   align-items: center;
@@ -10,13 +10,13 @@
   margin-bottom: 64px;
 }
 
-.slider__action-heading::before {
+.catalog__action-heading::before {
   content: url("../pictures/stroke.png");
   margin-right: 8px;
   vertical-align: middle;
 }
 
-.slider__action-heading::after {
+.catalog__action-heading::after {
   position: absolute;
   content: '';
   border-bottom: 3px solid var(--color-seporator-bold);
@@ -25,7 +25,7 @@
 }
 
 
-.slider__action-heading {
+.catalog__action-heading {
   font-family: var(--font-family-secondary);
   font-weight: 400;
   font-size: 24px;
@@ -35,13 +35,13 @@
   align-items: center;
 }
 
-.slider__action-buttons {
+.catalog__action-buttons {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.slider__arrows {
+.catalog__arrows {
 
   display: flex;
   align-items: center;
@@ -49,24 +49,24 @@
 
 }
 
-.slider__arrows::before {
+.catalog__arrows::before {
   content: "";
   margin-left: 16px;
   border-left: 2px solid var(--color-seporator-bold);
   height: 24px;
 }
 
-.slider__action {
+.catalog__action {
   display: flex;
   align-items: center;
 }
 
-.slider__cards {
+.catalog__cards {
   display: flex;
   gap: 24px;
 }
 
-.slider__item {
+.catalog__item {
   position: relative;
   background: var(--color-bg-alternative-2);
   padding: 24px;
@@ -75,7 +75,7 @@
   transition: border-color .15s ease-in, outline-color .15s ease-in;
 }
 
-.slider__item::before {
+.catalog__item::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -86,25 +86,25 @@
   transition: opacity .15s ease-in;
 }
 
-.slider__item:hover::before {
+.catalog__item:hover::before {
   opacity: 1;
 }
 
-.slider__item:active {
+.catalog__item:active {
   border-color: var(--color-marina-600);
   outline-color: var(--color-marina-600);
 }
 
-.slider__item:active::before {
+.catalog__item:active::before {
   opacity: 0;
 }
 
-.slider__item-img {
+.catalog__item-img {
   width: 100%;
   margin-bottom: 8px;
 }
 
-.slider__item-price {
+.catalog__item-price {
   font-family: var(--font-family-secondary);
   font-weight: 400;
   font-size: 36px;
@@ -113,7 +113,7 @@
   margin-bottom: 8px;
 }
 
-.slider__item-title {
+.catalog__item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
@@ -141,7 +141,7 @@
   color: var(--color-primary);
 }
 
-.slider__item-overlay {
+.catalog__item-overlay {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -153,13 +153,13 @@
   opacity: 0;
 }
 
-.slider__item:hover .slider__item-overlay {
+.catalog__item:hover .catalog__item-overlay {
   visibility: visible;
   opacity: 1;
   transition: opacity .15s ease-in;
 }
 
-/* .slider__item:hover {
+/* .catalog__item:hover {
   opacity: 0.3;
 } */
 

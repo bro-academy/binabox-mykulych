@@ -11,7 +11,9 @@
 }
 
 .catalog__action-heading::before {
-  content: url("../pictures/stroke.png");
+  content: url("/img/folder.svg");
+
+  height: 24px;
   margin-right: 8px;
   vertical-align: middle;
 }

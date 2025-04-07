@@ -2,15 +2,6 @@
   position: relative;
 }
 
-.nav-banner {
-  background-image: url(../pictures/image-background.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 375px;
-  display: flex;
-  align-items: baseline;
-}
-
 .page__wrapper {
   padding: 64px 172px 0 532px;
 }
@@ -82,7 +73,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url("../pictures/small-logo.svg") no-repeat center center;
+  background: url("/img/small-logo.svg") no-repeat center center;
   background-size: contain;
 }
 
@@ -108,7 +99,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url("../pictures/small-logo.svg") no-repeat center center;
+  background: url("/img/small-logo.svg") no-repeat center center;
   background-size: contain;
 }
 .blockquote-block__item {

@@ -1,4 +1,37 @@
 {
-  "title": "test",
-  "h1": ""
+  "title": "Binabox",
+  "h1": "",
+  "products": [
+    {
+     "image": "/img/skeleton-1x.webp",
+     "label": "New",
+     "price": "$199",
+     "name": "Name Product"
+    },
+    {
+      "image": "/img/cat-1x.webp",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+     },
+     {
+      "image": "/img/scissors-1x.webp",
+      "label": "Sold Out",
+      "price": "$199",
+      "name": "Name Product",
+      "soldout": "soldout"
+     },
+     {
+      "image": "/img/money-1x.webp",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+     },
+     {
+      "image": "/img/playstation-1x.webp",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+     }
+  ]
 }

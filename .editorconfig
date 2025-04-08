@@ -1,15 +1,30 @@
 # This file is for unifying the coding style for different editors and IDEs
 # editorconfig.org
 
+# Указывает, что это корневой файл конфигурации
 root = true
 
+# Настройки для всех файлов
 [*]
-indent_style = space
-indent_size = 2
-end_of_line = lf
-insert_final_newline = false
-trim_trailing_whitespace = true
-charset = utf-8
+end_of_line = lf         # Символ новой строки (lf или crlf)
+charset = utf-8          # Кодировка
+indent_style = space     # Использовать пробелы для отступов (или tab для табуляции)
+indent_size = 4          # Размер отступа (в пробелах)
+tab_width = 4            # Ширина табуляции (если используется tab)
+insert_final_newline = true  # Вставлять новую строку в конце файла
+
+# Настройки для конкретных типов файлов
+[*.html]
+indent_size = 4
+
+[*.css]
+indent_size = 4
 
 [*.js]
-insert_final_newline = true
+indent_size = 2
+
+[*.json]
+indent_size = 2
+
+[*.md]
+indent_size = 2

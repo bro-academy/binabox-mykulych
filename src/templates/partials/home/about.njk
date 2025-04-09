@@ -1,42 +1,10 @@
 <section class="about wrapper">
-    <h2 class="about__title">About us</h2>
-    <p class="about__text">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non
-        proident, sunt in culpa qui officia dese runt mollit anim id est laborum
-        velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat
-    </p>
+    <h2 class="about__title"> {{ about__heading }} </h2>
+    <p class="about__text"> {{ about_us_text }} </p>
     <div class="about-card">
-        <div class="about-card__item">
-            <h3 class="about-card__title">High quality</h3>
-            <p class="about-card__text">
-                Lorem Ipsum is simply dummy text of the printing and Ipsum
-                typesetting industry.
-            </p>
-        </div>
-        <div class="about-card__item">
-            <h3 class="about-card__title">High quality</h3>
-            <p class="about-card__text">
-                Lorem Ipsum is simply dummy text of the printing and Ipsum
-                typesetting industry.
-            </p>
-        </div>
-        <div class="about-card__item">
-            <h3 class="about-card__title">High quality</h3>
-            <p class="about-card__text">
-                Lorem Ipsum is simply dummy text of the printing and Ipsum
-                typesetting industry.
-            </p>
-        </div>
-        <div class="about-card__item">
-            <h3 class="about-card__title">High quality</h3>
-            <p class="about-card__text">
-                Lorem Ipsum is simply dummy text of the printing and Ipsum
-                typesetting industry.
-            </p>
-        </div>
+        {% for item in about_card %}
+        {% include "partials/home/elements/about-item.njk" %}
+        {% endfor %}
     </div>
-    <a class="about-card__btn button button--secondary" href="#">
-        Read more
-    </a>
+    <a class="about-card__btn button button--secondary" href="#">{{ btn_read_more }}</a>
 </section>

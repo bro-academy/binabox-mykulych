@@ -2,9 +2,7 @@
     <div class="catalog__action">
         <h2 class="catalog__action-heading">Catalog</h2>
         <div class="catalog__action-buttons">
-            <button class="catalog__action-button button button--primary">
-                See all
-            </button>
+            <button class="catalog__action-button button button--primary">See all</button>
             <div class="catalog__arrows">
                 <button class="catalog__action-button button button--secondary">
                     <img
@@ -24,8 +22,8 @@
         </div>
     </div>
     <div class="catalog__cards">
-        {% for item in products %}
-        {% include "partials/home/product-item.njk" %}
+        {% for item in catalog_card %}
+        {% include "partials/home/elements/product-item.njk" %}
         {% endfor %}
     </div>
 </section>

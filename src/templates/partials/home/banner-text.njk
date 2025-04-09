@@ -11,23 +11,11 @@
                     {{ item.text }}
                 </p>
             </div>
-
-            {# <div class="banner__stat">
-                <div class="banner__stat-wrapper">
-                    <p class="banner__stat-numbers">2240+</p>
-                    <p class="banner__stat-text">Total it earn</p>
-                </div>
-                <div class="banner__stat-wrapper">
-                    <p class="banner__stat-numbers">1000+</p>
-                    <p class="banner__stat-text">Profiles whitelisted</p>
-                </div>
-            </div> #}
             <div class="banner__stat">
              {% for item in statistic %}
              {% include "partials/home/banner-statistic.njk" %}
              {% endfor %}
              </div>
-
             <div class="banner__action-buttons">
                 <button class="banner__action-button button button--secondary">
                     Connect Wallet

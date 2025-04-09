@@ -1,40 +1,5 @@
 <section class="banner wrapper">
     <div class="banner__inner">
-        {# <div class="banner__content">
-            <div class="banner__details">
-                <h1 class="banner__title">
-                    {{ banner__text__first }}
-                    <span class="banner__title banner__title--blue">
-                        {{ banner__text__second }}
-                    </span>
-                    {{ banner__text__third }}
-                </h1>
-                <p class="banner__text">
-                    We are the best way to check the rarity of NFT collection
-                </p>
-            </div>
-            <div class="banner__stat">
-                <div class="banner__stat-wrapper">
-                    <p class="banner__stat-numbers">2240+</p>
-                    <p class="banner__stat-text">Total it earn</p>
-                </div>
-                <div class="banner__stat-wrapper">
-                    <p class="banner__stat-numbers">1000+</p>
-                    <p class="banner__stat-text">Profiles whitelisted</p>
-                </div>
-            </div>
-            <div class="banner__action-buttons">
-                <button class="banner__action-button button button--secondary">
-                    Connect Wallet
-                </button>
-                <a
-                    class="banner__action-button button button--primary"
-                    href="#"
-                    target="_blank">
-                    Whitelist now
-                </a>
-            </div>
-        </div> #}
         {% for item in banner %}
         {% include "partials/home/banner-text.njk" %}
         {% endfor %}

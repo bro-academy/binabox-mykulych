@@ -1,6 +1,30 @@
 {
-  "title": "Binabox",
-  "h1": "",
+  "project_name": "Binabox",
+  "blog__heading": "Our blog",
+  "about__heading": "About us",
+  "team__heading": "Our team",
+  "faq__heading": "FAQs",
+  
+"banner": [
+     {
+     "banner__heading__first": "WITH",
+     "banner__heading__second": "BINABOX",
+     "banner__heading__third": "EXPLORE NFT COLLECTION",
+     "text": "We are the best way to check the rarity of NFT collection"
+     }
+  ],
+
+  "statistic": [
+    {
+      "number": "2240+",
+      "text": "Total Item"
+    },
+    {
+      "number": "1000+",
+      "text": "Profiles whitelisted"
+    }
+  ],
+
   "products": [
     {
      "image": "/img/skeleton-1x.webp",
@@ -33,5 +57,8 @@
       "price": "$199",
       "name": "Name Product"
      }
+  ],
+  "articles": [
+
   ]
 }

@@ -88,6 +88,10 @@
   transition: opacity .15s ease-in;
 }
 
+.catalog__item:hover {
+opacity: 64%;
+}
+
 .catalog__item:hover::before {
   opacity: 1;
 }

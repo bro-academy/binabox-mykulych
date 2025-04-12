@@ -1,0 +1,19 @@
+<aside class="page__aside">
+    <h3 class="aside__title"> {{ aside_heading }} </h3>
+        <ul class="aside__list">
+            {% for item in aside_categories %}
+               <li class="aside__item">
+                <a class="aside__link" href="#">{{ item.category }}({{ item.numbers }})</a>
+            </li>
+            {% endfor %}
+        </ul>
+        </ul>
+    <h3 class="aside__title">{{ tag_heading }}</h3>
+        <ul class="aside__list">
+             {% for item in aside_tags %}
+               <li class="aside__item">
+                <a class="aside__link link--bordered" href="#">{{ item.tag }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+</aside>

@@ -1,0 +1,22 @@
+{
+  "contact_item": [
+    {
+      "src": "/img/marker-pin.svg",
+      "alt": "Location",
+      "title": "Location",
+      "adress": "2163 Phillips Gap Rd"
+    },
+    {
+      "src": "/img/mail.svg",
+      "alt": "Email",
+      "title": "Email",
+      "adress": "Info.avitex@gmail.com"
+    },
+    {
+      "src": "/img/phone.svg",
+      "alt": "Phone",
+      "title": "Phone",
+      "adress": "+1 666 8888"
+    }
+  ]
+}

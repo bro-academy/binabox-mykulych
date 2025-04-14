@@ -1,0 +1,11 @@
+<div class="contact-info">
+    <div class="contact-info__block">
+        {% for item in contact_item %}
+        <div class="contact-info__item">
+            <img src="{{ item.src }}" alt="{{ item.alt }}" class="contact-info__icon">
+            <h2 class="contact-info__title">{{ item.title }}</h2>
+            <p class="contact-info__adress">{{ item.adress }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -4,5 +4,11 @@
     background-size: cover;
     min-height: 375px;
     display: flex;
+    justify-content: center;
     align-items: baseline;
+    padding-top: 64px;
   }
+  .nav-banner__title {
+    font-family: var();
+  }
+

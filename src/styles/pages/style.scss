@@ -3,6 +3,7 @@
 @use "./../components/header.scss";
 @use "./home.scss";
 @use "./blog.scss";
+@use "./contact.scss";
 @use "./../components/footer.scss";
 @use "../components/ui-elements/ui-elements.scss";
 
@@ -14,6 +15,7 @@
     --color-secondary: #EFF5FAD1;
     --color-secondary2: #E7EEF7A8;
     --color-secondary-white: #EFF5FAD1;
+    --color-line: #D4D9F242;
     --color-marina-1200: #002754;
     --color-marina-800: #0265DC;
     --color-marina-600: #3892F3;

@@ -1,0 +1,33 @@
+.contact-form {
+    margin: 64px 0 104px;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        max-width: 640px;
+        width: 100%;
+    }
+    &__item {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+    &__label {
+    
+    }
+    &__input {
+        width: 100%;
+        min-height: 40px;
+        border: 2px solid var(--color-seporator-bold);
+        background: transparent;
+
+        
+    }
+}
+

@@ -1,0 +1,58 @@
+{
+  "catalog_card": [
+    {
+     "image": "/img/catalog/face-1x.webp",
+     "label": "New",
+     "price": "$199",
+     "name": "Name Product"
+    },
+    {
+      "image": "/img/catalog/face-1x.webp",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+     },
+     {
+      "image": "/img/catalog/face-1x.webp",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+     },
+     {
+      "image": "/img/catalog/face-1x.webp",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+     },
+     {
+      "image": "/img/catalog/face-1x.webp",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+     },
+     {
+      "image": "/img/catalog/face-1x.webp",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+     },
+     {
+      "image": "/img/catalog/face-1x.webp",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+     },
+     {
+      "image": "/img/catalog/face-1x.webp",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+     },
+     {
+      "image": "/img/catalog/face-1x.webp",
+      "label": "New",
+      "price": "$199",
+      "name": "Name Product"
+     }
+  ]
+}

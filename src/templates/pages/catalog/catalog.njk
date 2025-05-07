@@ -2,5 +2,16 @@
 
 {% block content %}
 {% include "partials/common/nav-banner.njk" %}
-{% include "partials/catalog/catalog.njk" %}
+<section class="catalog-page wrapper">
+    {% include "partials/catalog/filter-form.njk" %}
+    <div class="catalog__content">
+        {% include "partials/catalog/sort-form.njk" %}
+        <div class="catalog__items">
+            {% for item in catalog_card %}
+            {% include "partials/home/elements/product-item.njk" %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
 {% endblock %}
+

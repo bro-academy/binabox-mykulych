@@ -1,0 +1,96 @@
+.catalog-page {
+    display: flex;
+    gap: 64px;
+    padding-inline: 160px;
+    padding-block: 64px;
+}
+
+.catalog__aside {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    min-width: 320px;
+}
+
+.catalog__filters {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.catalog-filter {
+    background-color: var(--color-bg-alternative-2);
+    padding: 24px;
+    position: relative;
+    &:hover {
+        cursor: pointer;
+    }
+    &__options {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 32px;
+    }
+    // ======================== CHECKBOX Styles 
+    &__option {
+        position: relative;
+        padding-left: 28px;
+      }
+    
+      &__checkbox {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    
+      &__checkmark {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 16px;
+        width: 16px;
+        border-radius: 4px;
+        background-color: var(--color-bg-base);
+        border: 2px solid var(--color-line);
+        box-sizing: border-box;
+    
+        &::after {
+          content: '';
+          position: absolute;
+          display: none;
+          left: 4px;
+          top: 0;
+          width: 4px;
+          height: 8px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+      }
+    
+      &__checkbox:checked + &__checkmark {
+        background-color: var(--color-marina-800);
+        border-color: var(--color-marina-800);
+    
+        &::after {
+          display: block;
+        }
+      }
+    }
+    // ============================= // ===============================
+
+
+details[open] summary::before {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 24px;
+    width: 272px;
+    height: 1px;
+    background-color: var(--color-seporator);
+}

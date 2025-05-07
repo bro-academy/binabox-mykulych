@@ -1,0 +1,6 @@
+.catalog__items {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 32px;
+}

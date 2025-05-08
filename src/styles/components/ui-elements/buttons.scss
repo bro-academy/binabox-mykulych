@@ -4,16 +4,28 @@
     justify-content: center;
     font-size: 18px;
     font-weight: 600;
-    line-height: 28px;
-    padding: 8px 24px;
     gap: 8px;
-    min-height: 48px;
     color: var(--color-primary);
     background: transparent;
     cursor: pointer;
     border: 2px solid transparent;
     transition: 0.3s ease-in-out;
     outline-offset: 0px;
+    &--s {
+        min-height: 32px;
+        line-height: 20px;
+        padding: 6px 24px;
+    }
+    &--m {
+        min-height: 40px;
+        line-height: 24px;
+        padding: 8px 24px;
+    }
+    &--l {
+        min-height: 48px;
+        line-height: 28px;
+        padding: 8px 24px;
+    }
 }
 
 /* ------------------------Button Primary */
@@ -87,27 +99,27 @@
 }
 
 .icon {
-  fill: transparent;
-  stroke: black;
-  transition: fill 0.3s ease, stroke 0.3s ease;
+    fill: transparent;
+    stroke: black;
+    transition: fill 0.3s ease, stroke 0.3s ease;
 }
 
 .favorites--button:hover .icon {
-  fill: red;
-  stroke: red;
+    fill: red;
+    stroke: red;
 }
 
 .favorites--button:hover {
-  background-color: var(--color-secondary-white);
+    background-color: var(--color-secondary-white);
 }
 
 .buy-button {
- background-color: var(--color-marina-800);
- color: var(--color-primary);
+    background-color: var(--color-marina-800);
+    color: var(--color-primary);
 }
 
 .buy-button:hover {
-  background-color: var(--color-marina-600);
+    background-color: var(--color-marina-600);
 }
 
 .link--bordered {

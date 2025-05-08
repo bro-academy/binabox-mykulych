@@ -1,19 +1,18 @@
 <div class="contact-form">
     <div class="contact-form__wrapper">
         <form class="contact-form__form" action="url" method="post">
-          <div class="contact-form__text">
-              <h1 class="contact-form__text-title">Get in touch</h1>
-              <p class="contact-form__text-subtitle">
-                  Browse through the most freuently asked questions
-              </p>
-          </div>
-
-            <div class="contact-form__switcher-block">
-                <label class="contact-form__switcher-label">
-                    Use my profile information
-                    <input class="contact-form__switcher" type="checkbox" name="information"/>
-                </label>
+            <div class="contact-form__text">
+                <h1 class="contact-form__text-title">Get in touch</h1>
+                <p class="contact-form__text-subtitle">
+                    Browse through the most freuently asked questions
+                </p>
             </div>
+
+            <label class="contact-form__switch" for="use-info">
+                <span class="contact-form__switch-label">Use my profile information</span>
+                <input type="checkbox" class="contact-form__switch-input" id="use-info" />
+                <span class="contact-form__switch-slider"></span>
+            </label>
 
             <div class="contact-form__item">
                 <label class="contact-form__label" for="name">Name</label>
@@ -67,7 +66,7 @@
                     <a class="contact-form__terms-link link" href="#">all the terms of the security policy</a>
                 </label>
             </div>
-            <button class="button button--primary" type="submit">
+            <button class="button button--primary button--l" type="submit">
                 Send Message
             </button>
         </form>

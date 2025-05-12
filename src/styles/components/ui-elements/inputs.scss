@@ -1,0 +1,105 @@
+label {
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-bg-base);
+    border: 2px solid var(--color-line);
+    border-radius: 4px;
+    // стили при не чекнутом состоянии
+    &:hover {
+        background-color: var(--color-bg-alternative-2);
+    }
+    &:active {
+        background-color: var(--color-marina-200);
+    }
+    &:focus {
+        outline: 2px solid var(--color-marina-600);
+        border: 2px solid var(--color-bg-alternative);
+        background-color: var(--color-bg-alternative);
+    }
+    // ----------------------------------------------------
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    &__checkmark {
+        opacity: 0;
+    }
+}
+
+.custom-checkbox__checkbox:checked
+    + .custom-checkbox__icon
+    .custom-checkbox__checkmark {
+    opacity: 1;
+}
+
+// ================== Switcher ====================
+.custom-switch {
+    display: flex;
+}
+.switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.switcher {
+    width: 40px;
+    height: 20px;
+    background-color: var(--color-disabled);
+    border-radius: 34px;
+    position: relative;
+    transition: background-color 0.3s;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        left: 2px;
+        top: 2px;
+        background-color: white;
+        border-radius: 50%;
+        transition: transform 0.3s;
+    }
+    &:hover {
+        background-color: var(--color-line);
+    }
+    &:active {
+        background-color: var(--color-secondary-white);
+    }
+    &:focus {
+        outline: 2px solid var(--color-marina-600);
+        outline-offset: 2px;
+    }
+}
+
+.switch-input:checked + .switcher {
+    background-color: var(--color-marina-800);
+    &:before {
+        transform: translateX(20px);
+    }
+    &:hover {
+        background-color: var(--color-marina-600);
+    }
+    &:active {
+        background-color: var(--color-marina-600);
+    }
+    &:focus {
+        outline: 2px solid var(--color-marina-600);
+        outline-offset: 2px;
+    }
+}

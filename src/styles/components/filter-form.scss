@@ -34,7 +34,9 @@
     // ======================== CHECKBOX Styles 
     &__option {
         position: relative;
-        padding-left: 28px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
     
       &__checkbox {

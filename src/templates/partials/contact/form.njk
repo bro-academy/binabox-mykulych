@@ -33,11 +33,13 @@
             <div class="contact-form__item">
                 <p class="contact-form__heading">Gender</p>
                 <label class="contact-form__label">
-                    <input class="contact-form__radio" type="radio" name="gender"/>
+                    <input type="radio" class="default-radio" name="gender">
+                    <span class="custom-radio"></span>
                     Male
                 </label>
                 <label class="contact-form__label">
-                    <input class="contact-form__radio" type="radio" name="gender"/>
+                    <input type="radio" class="default-radio" name="gender">
+                    <span class="custom-radio"></span>
                     Female
                 </label>
             </div>
@@ -58,8 +60,9 @@
                 <textarea class="contact-form__input" name="message" id="message"></textarea>
             </div>
             <div class="contact-form__item">
-                <label class="contact-form__label" for="send">
-                    <input class="contact-form__checkbox" type="checkbox" id="send" name="contact" required/>
+                <label class="contact-form__terms-agree">
+                    <input type="checkbox" class="default-checkbox" required>
+                    <span class="custom-checkbox"></span>
                     By clicking on the ‘Send Message’ button I agree to
                     <a class="contact-form__terms-link link" href="#">all the terms of the security policy</a>
                 </label>

@@ -22,6 +22,44 @@
     background-color: var(--color-bg-alternative-2);
     padding: 24px;
     position: relative;
+    summary {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        padding-right: 20px;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        &::after {
+            content: "+";
+            margin-left: auto;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+    }
+
+    &[open] {
+        summary {
+            &::after {
+                content: "–";
+            }
+
+            // Добавляем полоску только при открытом блоке
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -16px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: #444;
+            }
+        }
+    }
 
     &__options {
         display: flex;
@@ -36,14 +74,4 @@
         align-items: center;
         gap: 8px;
     }
-}
-
-details[open] summary::before {
-    content: "";
-    position: absolute;
-    top: 64px;
-    left: 24px;
-    width: 272px;
-    height: 1px;
-    background-color: var(--color-seporator);
 }

@@ -58,12 +58,15 @@
 // }
 // ================ Checkbox ===========================
 .custom-checkbox {
+    display: inline-block;
     width: 16px;
     height: 16px;
     border-radius: 4px;
     background-color: var(--color-bg-base);
     border: 2px solid var(--color-line);
+    background-position: center;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 .default-checkbox {
     width: 0;
@@ -85,15 +88,14 @@
             outline: 2px solid var(--color-marina-600);
         }
     }
-    
+
     &:checked {
         & + .custom-checkbox {
             background-color: var(--color-marina-800);
             border: 2px solid var(--color-marina-800);
             background-image: url(/img/mark-white.svg);
-            background-size: 8px auto; /* или cover, зависит от желаемого результата */
+            background-size: 8px auto;
             background-repeat: no-repeat;
-            background-position: center;
         }
         &:hover {
             & + .custom-checkbox {
@@ -110,5 +112,52 @@
         }
     }
 }
-
-// -----------------------------------------------------
+// =================== Radio =============================
+.custom-radio {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: var(--color-bg-base);
+    border: 2px solid var(--color-line);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.default-radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+    &:hover {
+        & + .custom-radio {
+            background-color: var(--color-bg-alternative-2);
+        }
+    }
+    &:active {
+        & + .custom-radio {
+            border: 5px solid var(--color-marina-800);
+        }
+    }
+    &:focus {
+        & + .custom-radio {
+            border: 2px solid var(--color-secondary2);
+            outline: 2px solid var(--color-marina-600);
+            outline-offset: 1px;
+        }
+    }
+    &:checked {
+        & + .custom-radio {
+            border: 5px solid var(--color-line);
+        }
+        &:active {
+            & + .custom-radio {
+                border: 5px solid var(--color-marina-800);
+            }
+        }
+        &:focus {
+            & + .custom-radio {
+                border: 5px solid var(--color-marina-600);
+            }
+        }
+    }
+}
+// -------------------------------------------------------

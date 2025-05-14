@@ -8,18 +8,15 @@
         gap: 32px;
     }
     &__head {
-        display: flex;
+        display: grid;
         align-items: center;
-        justify-content: space-between;
-    }
-    &__controls {
-        display: flex;
-        align-items: center;
+        grid-template-columns: 1fr 140px 1fr;
         gap: 16px;
     }
 
     &__input {
         min-height: 48px;
+        width: 100%;
         background: transparent;
         padding-left: 44px;
         border: 2px solid var(--color-seporator-bold);

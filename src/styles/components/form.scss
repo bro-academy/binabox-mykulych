@@ -21,7 +21,7 @@
         flex-direction: column;
         gap: 8px;
     }
-    //======================== Toggle =========================//
+
     &__switch {
         display: flex;
         align-items: center;
@@ -31,6 +31,13 @@
         background-color: var(--color-bg-alternative-2);
         pointer-events: none;
     }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
     &__item {
         position: relative;
         width: 100%;
@@ -38,12 +45,6 @@
         display: flex;
         flex-direction: column;
         gap: 4px;
-    }
-
-    &__radio {
-        accent-color: #ff6600;
-        background-color: red;
-        color: green;
     }
 
     &__item textarea {
@@ -57,5 +58,9 @@
         background: transparent;
         color: var(--color-secondary2);
         padding: 10px 12px;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            border: 2px solid var(--color-marina-600);
+        }
     }
 }

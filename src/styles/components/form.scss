@@ -77,6 +77,10 @@
         }
     }
 
+    &__terms-agree {
+        cursor: pointer;
+    }
+
     &__terms-link {
         color: var(--color-accent-link);
     }

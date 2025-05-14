@@ -22,6 +22,12 @@
     background-color: var(--color-bg-alternative-2);
     padding: 24px;
     position: relative;
+    &__title {
+        font-size: 24px;
+        line-height: 32px;
+        font-family: var( --font-family-secondary);
+        font-weight: 400px;
+    }
     summary {
         list-style: none;
         display: flex;
@@ -73,5 +79,6 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        line-height: 20px;
     }
 }

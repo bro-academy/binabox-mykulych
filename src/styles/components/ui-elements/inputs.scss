@@ -1,70 +1,3 @@
-label {
-    cursor: pointer;
-}
-//===================== Checkbox ==========================
-.custom-checkbox {
-    position: relative;
-    width: 16px;
-    height: 16px;
-    background-color: var(--color-bg-base);
-    border: 2px solid var(--color-line);
-    border-radius: 4px;
-
-    // стили при не чекнутом состоянии
-    &:hover {
-        background-color: var(--color-bg-alternative-2);
-    }
-
-    &:active {
-        background-color: var(--color-marina-200);
-    }
-
-    &:focus {
-        outline: 2px solid var(--color-marina-600);
-        border: 2px solid var(--color-bg-alternative);
-        background-color: var(--color-bg-alternative);
-    }
-
-    // ----------------------------------------------------
-    &__checkbox {
-        position: absolute;
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-
-        &:checked {
-            background-color: red;
-        }
-    }
-    &__icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-    }
-    &__checkmark {
-        opacity: 0;
-    }
-}
-
-.custom-checkbox__checkbox:checked
-    + .custom-checkbox__icon
-    .custom-checkbox__checkmark {
-    opacity: 1;
-}
-
-.custom-checkbox__checkbox {
-    &:checked {
-        & + .custom-checkbox__icon {
-            .custom-checkbox__checkmark {
-                opacity: 1;
-            }
-        }
-    }
-}
-
-
 //==================== Switcher ====================
 .switcher {
     cursor: pointer;
@@ -123,5 +56,59 @@ label {
 // .switcher:active:after {
 //     width: 130px;
 // }
+// ================ Checkbox ===========================
+.custom-checkbox {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: var(--color-bg-base);
+    border: 2px solid var(--color-line);
+    cursor: pointer;
+}
+.default-checkbox {
+    width: 0;
+    height: 0;
+    position: absolute;
+    &:hover {
+        & + .custom-checkbox {
+            background-color: var(--color-bg-alternative-2);
+        }
+    }
+    &:active {
+        & + .custom-checkbox {
+            background-color: var(--color-marina-200);
+        }
+    }
+    &:focus {
+        & + .custom-checkbox {
+            background-color: var(--color-bg-alternative);
+            outline: 2px solid var(--color-marina-600);
+        }
+    }
+    
+    &:checked {
+        & + .custom-checkbox {
+            background-color: var(--color-marina-800);
+            border: 2px solid var(--color-marina-800);
+            background-image: url(/img/mark-white.svg);
+            background-size: 8px auto; /* или cover, зависит от желаемого результата */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &:hover {
+            & + .custom-checkbox {
+                background-color: var(--color-marina-600);
+                border: 2px solid var(--color-marina-600);
+            }
+        }
+        &:active {
+            & + .custom-checkbox {
+                background-color: var(--color-marina-200);
+                border: 2px solid var(--color-marina-200);
+                background-image: url(/img/mark-blue.svg);
+            }
+        }
+    }
+}
 
 // -----------------------------------------------------

@@ -1,16 +1,20 @@
 <article class="blog__card blog__card--{{ item.class }}">
-    <picture>
-        <source media="(min-width: 678px)" srcset="" type="image/webp"/>
-        <img class="image" src="{{ item.image }}" alt="Playstation"/>
-    </picture>
     <span class="label blog__card-label">{{ item.label }}</span>
-    <p class="blog__card-wrapper">
-        <span class="blog__card-writer">{{ item.name }}</span>
-        <time class="blog__card-date" datetime="2022-06-20">{{ item.date }}</time>
-    </p>
-    <h3 class="blog__card-title">{{ item.heading }}</h3>
-    <p class="blog__card-desc">{{ item.text }}</p>
-    <a class="blog__card-button button button--article" href="#">{{ btn_read_more }}
-        <img src="./img/chevron-right.svg">
-    </a>
+    <div class="blog__card-picture">
+        <picture>
+            <source media="(min-width: 678px)" srcset="" type="image/webp"/>
+            <img class="image" src="{{ item.image }}" alt="Playstation"/>
+        </picture>
+    </div>
+    <div class="blog__card-body">
+        <p class="blog__card-wrapper">
+            <span class="blog__card-writer">{{ item.name }}</span>
+            <time class="blog__card-date" datetime="2022-06-20">{{ item.date }}</time>
+        </p>
+        <h3 class="blog__card-title">{{ item.heading }}</h3>
+        <p class="blog__card-desc">{{ item.text }}</p>
+        <a class="blog__card-button button button--article" href="#">{{ btn_read_more }}
+            <img src="./img/chevron-right.svg">
+        </a>
+    </div>
 </article>

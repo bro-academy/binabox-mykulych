@@ -1,19 +1,23 @@
-<aside class="page__aside">
-    <h3 class="aside__title"> {{ aside_heading }} </h3>
-        <ul class="aside__list">
+<aside class="page__sidebar">
+    <div class="page__sidebar-block">
+        <h3 class="page__sidebar-title"> {{ aside_heading }} </h3>
+        <ul class="page__sidebar-list">
             {% for item in aside_categories %}
-               <li class="aside__item">
-                <a class="aside__link" href="#">{{ item.category }}({{ item.numbers }})</a>
+            <li class="page__sidebar-item">
+                <a class="page__sidebar-link" href="#">{{ item.category }}({{ item.numbers }})</a>
             </li>
             {% endfor %}
         </ul>
-        </ul>
-    <h3 class="aside__title">{{ tag_heading }}</h3>
-        <ul class="aside__list">
-             {% for item in aside_tags %}
-               <li class="aside__item">
-                <a class="aside__link link--bordered" href="#">{{ item.tag }}</a>
+
+    </div>
+    <div class="page__sidebar-block">
+        <h3 class="page__sidebar-title">{{ tag_heading }}</h3>
+        <ul class="page__sidebar-links">
+            {% for item in aside_tags %}
+            <li class="page__sidebar-item">
+                <a class="page__sidebar-link link--bordered" href="#">{{ item.tag }}</a>
             </li>
             {% endfor %}
         </ul>
+    </div>
 </aside>

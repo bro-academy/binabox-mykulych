@@ -207,10 +207,17 @@
 
     &__images-wrapper {
         margin-top: 32px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
 
-        &-item {
-            width: 100%;
-        }
+    &__images-item {
+        width: 100%;
+    }
+
+    &__images-img {
+        width: 100%;
     }
 
     &__title {

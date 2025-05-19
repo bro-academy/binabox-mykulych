@@ -1,6 +1,8 @@
 .team-block {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
     gap: 40px;
+    justify-content: center;
 }
 
 .team-item {
@@ -11,18 +13,19 @@
     position: relative;
     border: 2px solid var(--color-bg-alternative-2);
     outline: 2px solid transparent;
-    transition: border-color .15s ease-in, outline-color .15s ease-in;
+    transition: border-color 0.15s ease-in, outline-color 0.15s ease-in;
+    width: 100%;
 }
 
 .team-item::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
-    background: url('/img/frame-1x.webp') no-repeat top left;
+    background: url("/img/frame-1x.webp") no-repeat top left;
     background-size: 100% 100%;
     pointer-events: none;
     opacity: 0;
-    transition: opacity .15s ease-in;
+    transition: opacity 0.15s ease-in;
 }
 
 .team-item:hover::before {

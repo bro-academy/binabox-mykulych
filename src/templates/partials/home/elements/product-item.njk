@@ -1,11 +1,11 @@
-<div class="catalog__item">
-    <div class="catalog__item-content">
-        <img class="catalog__item-img" src="{{ item.image }}" alt="Skeleton standing in blue mist"/>
-        <p class="catalog__item-price">{{ item.price }}</p>
-        <p class="catalog__item-title">{{ item.name }}</p>
-        <p class="label catalog__item-label label--{{ item.soldout }}">{{ item.label }}</p>
+<div class="product__item">
+    <div class="product__item-content">
+        <img class="product__item-content-img" src="{{ item.image }}" alt="Skeleton standing in blue mist"/>
+        <p class="product__item-content-price">{{ item.price }}</p>
+        <p class="product__item-content-title">{{ item.name }}</p>
+        <p class="label label--{{ item.soldout }}">{{ item.label }}</p>
     </div>
-    <div class="catalog__item-overlay">
+    <div class="product__item-overlay">
         <button class="catalog__item-button favorites--button">
             <svg
                 xmlns="http://www.w3.org/2000/svg"

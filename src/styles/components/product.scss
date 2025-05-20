@@ -1,0 +1,119 @@
+.products__wrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.product__item {
+    position: relative;
+    background: var(--color-bg-alternative-2);
+    padding: 24px;
+    outline: 2px solid transparent;
+    transition: border-color 0.15s ease-in, outline-color 0.15s ease-in;
+    width: 100%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("/img/frame-1x.webp") no-repeat top left;
+        background-size: 100% 100%;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.15s ease-in;
+        z-index: 3;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgb(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: background-color 0.2s ease;
+    }
+
+    &:active {
+        border-color: var(--color-marina-600);
+        outline-color: var(--color-marina-600);
+    }
+
+    &:active::before {
+        opacity: 0;
+    }
+
+    &:hover::before {
+        opacity: 1;
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    &-content {
+        &-img {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        &-price {
+            font-family: var(--font-family-secondary);
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        &-title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.4;
+            letter-spacing: 0px;
+            color: var(--color-secondary);
+        }
+    }
+}
+
+.product__item-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: calc(100% - 48px);
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+}
+
+.product__item:hover .product__item-overlay {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.15s ease-in;
+}
+
+.label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    display: inline-block;
+    padding-inline: 10px;
+    padding-block: 8px;
+    background: var(--color-primary);
+    color: var(--color-marina-800);
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    &--soldout {
+        background-color: var(--color-negative);
+        color: var(--color-primary);
+    }
+}
+
+
+

@@ -1,9 +1,12 @@
 <section class="catalog wrapper">
     <div class="catalog__action">
-        <h2 class="catalog__action-heading">Catalog</h2>
+        <h2 class="catalog__action-heading">
+            Catalog
+
+        </h2>
         <div class="catalog__action-buttons">
             <button class="catalog__action-button button button--secondary button--l">See all</button>
-            <div class="catalog__arrows">
+            <div class="catalog__action-arrows">
                 <button class="catalog__action-button button button--secondary button--l">
                     <img
                         class=""
@@ -11,7 +14,7 @@
                         alt="Arrow left"
                     />
                 </button>
-                <button class="catalog__action-button button button--secondary button--l">
+                <button class="catalog__action-button button button--primary button--l">
                     <img
                         class=""
                         src="/img/chevron-right.svg"
@@ -21,7 +24,7 @@
             </div>
         </div>
     </div>
-    <div class="catalog__cards">
+    <div class="products__wrapper">
         {% for item in catalog_card %}
         {% include "partials/home/elements/product-item.njk" %}
         {% endfor %}

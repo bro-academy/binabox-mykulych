@@ -1,8 +1,22 @@
 .page {
     margin-top: 64px;
-    padding-inline: 108px;
+    padding-inline: 172px;
     display: flex;
     gap: 32px;
+
+    @media (max-width:1727px) {
+        padding-inline: 64px;
+    }
+
+    @media (max-width:1279px) {
+        margin-top: 24px;
+        display: block;
+    }
+
+    @media (max-width:677px) {
+        margin-top: 0;
+        padding-inline: 16px;
+    }
 
     &__sidebar {
         display: flex;
@@ -46,6 +60,10 @@
 
     &__hero-image-img {
         width: 100%;
+        
+        @media (max-width:1279px) {
+            margin-top: 40px;
+        }
     }
 
     &__hero-heading {
@@ -209,7 +227,11 @@
         margin-top: 32px;
         display: flex;
         align-items: center;
-        gap: 24px;
+        gap: 30px;
+
+        @media (max-width:1279px) {
+           flex-direction: column;
+        }
     }
 
     &__images-item {
@@ -229,6 +251,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width:677px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+         }
 
         &-tags,
         &-shares {

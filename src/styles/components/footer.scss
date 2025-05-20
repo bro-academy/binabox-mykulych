@@ -1,12 +1,16 @@
 .footer {
     background-color: var(--color-bg-alternative);
-    padding-inline: 64px;
 
     &__wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         padding-block: 64px;
         justify-content: space-between;
+
+        @media (max-width: 1279px) {
+            flex-direction: column;
+            gap: 36px;
+        }
     }
 
     &__hero {
@@ -30,7 +34,7 @@
     &__hero-text {
         font-weight: 400;
         font-size: 14px;
-        line-height: 1.4;
+        line-height: 20px;
     }
 
     &__nav-subscribe-title {
@@ -68,6 +72,12 @@
         justify-content: space-between;
         padding-block: 42px;
         border-top: 1px solid var(--color-seporator);
+
+        @media (max-width: 678px) { 
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
 
         &-copyring {
             font-weight: 400;

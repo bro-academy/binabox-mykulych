@@ -1,32 +1,23 @@
-.blog__wrapper {
-    // display: flex;
-    // gap: 20px;
-    // flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-}
-
-.blog__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 24px;
-    position: relative;
-    background-color: var(--color-bg-alternative-2);
-    padding: 24px;
-    outline: 2px solid transparent;
-    transition: border-color 0.15s ease-in, outline-color 0.15s ease-in;
-
-    &:hover::before {
-        opacity: 1;
+.blog {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 40px;
     }
-
-    &--large {
-        grid-row: span 2;
-    }
-
-    &::before {
+  
+    &__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+      position: relative;
+      background-color: var(--color-bg-alternative-2);
+      padding: 24px;
+      outline: 2px solid transparent;
+      transition: border-color 0.15s ease-in, outline-color 0.15s ease-in;
+  
+      &::before {
         content: "";
         position: absolute;
         inset: 0;
@@ -35,38 +26,56 @@
         pointer-events: none;
         opacity: 0;
         transition: opacity 0.15s ease-in;
-    }
-
-    &:active {
+      }
+  
+      &:hover::before {
+        opacity: 1;
+      }
+  
+      &:active {
         border-color: var(--color-marina-600);
         outline-color: var(--color-marina-600);
-    }
-
-    &:active::before {
-        opacity: 0;
-    }
-   
-    &-picture {
+  
+        &::before {
+          opacity: 0;
+        }
+      }
+  
+      &--large {
+        grid-row: span 2;
+      }
+  
+      &-picture {
         width: 100%;
-    }
-
-    & picture img {
-        width: 100%;
-    }
-
-    &-body {
+      }
+  
+      picture {
+        img {
+          width: 100%;
+        }
+      }
+  
+      &-body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
         gap: 16px;
-    }
-
-    & p {
+      }
+  
+      p {
         font-weight: 600;
         font-size: 14px;
         line-height: 1.4;
         letter-spacing: 0px;
         color: var(--color-secondary);
+      }
     }
-}
+  
+    &__button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 128px;
+    }
+  }
+  

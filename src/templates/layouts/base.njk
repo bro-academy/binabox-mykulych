@@ -10,10 +10,10 @@
   <title>{{ project_name }}</title>
 </head>
 <body>
-{# {% include "partials/common/header.njk" %} #}
+{% include "partials/common/header.njk" %}
   <main> 
     {% block content %}default content{% endblock %}
   </main>
-{# {% include "partials/common/footer.njk" %} #}
+{% include "partials/common/footer.njk" %}
 </body>
 </html>
